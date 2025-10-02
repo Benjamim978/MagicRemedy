@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MagicRemedy</title>
+  <link rel="icon" href="Imagens/Icone.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="Imagens/Icone.png" alt="Ícone" class="logo-icon" />
+    <h1>Enfermaria</h1>
+  </header>
+  
+  <section id="tela-login">
+  <h2>Login</h2>
+  <img src="Imagens/Icone.png" alt="Ícone de Login" class="login-imagem" />
+
+  <form onsubmit="return autenticarLogin()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required />
+
+    <label for="idade">Idade (opcional):</label>
+    <input type="number" id="idade" />
+
+    <button type="submit">Entrar</button>
+    <p id="mensagem-login"></p>
+  </form>
+  </section>
+  
+  <div id="conteudo-principal" style="display: none;">
+
+  <button id="botao-ia" onclick="alternarIA()">IA</button>
+
+  <div id="ia-container" style="display: none;">
+    <div id="iframe-wrapper"></div>
+    <button id="botao-modo" onclick="alternarModo()">Mudar para Voz</button>
+  </div>
+
+  <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+
+  <!-- Seções do app -->
+  <section id="apresentacao" style="display: none;">
+    <h2>Adaneide,</h2>
+    <p>Este app foi dedicado a você, espero que goste e que este app te ajude muito!</p>
+  </section>
+
+  <section class="dicas">
+    <h2>Dicas de Enfermagem</h2>
+    <div class="botoes">
+      <button onclick="alternarCard(1)">Comunicação Efetiva</button>
+      <button onclick="alternarCard(2)">Segurança do Paciente</button>
+      <button onclick="alternarCard(3)">Autocuidado do Profissional</button>
+    </div>
+    <div id="cards-container">
+      <div id="card-1" class="card" style="display: none;">
+        <h3>Comunicação Efetiva</h3>
+        <p>Ouça atentamente as queixas e preocupações do paciente e de seus familiares...</p>
+      </div>
+      <div id="card-2" class="card" style="display: none;">
+        <h3>Segurança do Paciente</h3>
+        <p>Siga rigorosamente os protocolos de higiene das mãos e de administração de medicamentos...</p>
+      </div>
+      <div id="card-3" class="card" style="display: none;">
+        <h3>Autocuidado do Profissional</h3>
+        <p>Cuide da sua saúde física e mental...</p>
+      </div>
+    </div>
+  </section>
+
+<section class="ferramentas">
+  <h2>Ferramentas</h2>
+  <div class="ferramenta">
+    <h3>Verificador de Temperatura</h3>
+    <label for="temperatura">Temperatura (°C):</label>
+    <input type="number" id="temperatura" />
+    <button onclick="verificarFebre()">Verificar</button>
+    <p id="resultado"></p>
+
+    <h3>Contador de Respiração</h3>
+    <button onclick="iniciarContador()">Iniciar</button>
+    <button onclick="reiniciarContador()">Reiniciar</button>
+    <p id="contador-respiracao">Respirações: 0</p>
+
+    <h3>Verificador de Pressão Arterial</h3>
+    <label for="pressao-sistolica">Pressão Sistólica:</label>
+    <input type="number" id="pressao-sistolica" />
+    <label for="pressao-diastolica">Pressão Diastólica:</label>
+    <input type="number" id="pressao-diastolica" />
+    <button onclick="verificarPressao()">Verificar</button>
+    <p id="resultado-pressao"></p>
+
+    <h3>Verificador Sistólica Separado</h3>
+    <label for="sistolica-unica">Sistólica:</label>
+    <input type="number" id="sistolica-unica" />
+    <button onclick="verificarSistolica()">Verificar</button>
+    <p id="resultado-sistolica"></p>
+
+    <h3>Verificador Diastólica Separado</h3>
+    <label for="diastolica-unica">Diastólica:</label>
+    <input type="number" id="diastolica-unica" />
+    <button onclick="verificarDiastolica()">Verificar</button>
+    <p id="resultado-diastolica"></p>
+
+    <h3>Calculadora de IMC</h3>
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" />
+    <label for="altura">Altura (m):</label>
+    <input type="number" id="altura" step="0.01" />
+    <button onclick="calcularIMC()">Calcular</button>
+    <p id="resultado-imc"></p>
+
+    <h3>Cronômetro</h3>
+    <button onclick="iniciarCronometro()">Iniciar</button>
+    <button onclick="pararCronometro()">Parar</button>
+    <button onclick="zerarCronometro()">Zerar</button>
+    <p id="cronometro">00:00</p>
+  </div>
+</section>
+
+  <footer>
+    <p>© Por Benjamim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

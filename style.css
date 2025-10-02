@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8dc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffd700;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.logo-icon {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: auto;
+}
+
+.apresentacao, .dicas, .ferramentas {
+  padding: 20px;
+}
+
+.apresentacao {
+  background-color: #fffacd;
+}
+
+.dicas {
+  background-color: #ffffe0;
+}
+
+.ferramentas {
+  background-color: #fff8dc;
+}
+
+.botoes button {
+  background-color: #f0e68c;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background-color: #ffeb3b;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #ffd700;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #ffd700;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+#botao-ia {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #ffd700;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#botao-ia:hover {
+  background-color: #ffcc00;
+}
+
+#botao-modo {
+  margin-top: 10px;
+  background-color: #f0e68c;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#tela-login {
+  background-color: #fffacd;
+  padding: 30px;
+  max-width: 400px;
+  margin: 80px auto;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-imagem {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#tela-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tela-login input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#tela-login button {
+  background-color: #ffd700;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#tela-login button:hover {
+  background-color: #ffcc00;
+}
+
+#mensagem-login {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
