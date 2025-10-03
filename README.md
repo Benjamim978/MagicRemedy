@@ -11,8 +11,7 @@
 
 ##### 2
 
-- Entre no github io
-- Procure este repositório
+- Entre em https://benjamim978.github.io/MagicRemedy/
 - Rode
 
 ## Possíveis erros:
